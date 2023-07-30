@@ -4,7 +4,7 @@ from pathlib import Path
 __all__ = ['filerenamer']
 
 
-def filerenamer(filename='', count_length=1, u_range=None, old_ext=None, new_ext=None, *, filepath='.'):
+def filerenamer(*, filename='', count_length=1, u_range=None, old_ext=None, new_ext=None, filepath='.'):
     path = Path(filepath)
     count = 0
     if new_ext is None:
@@ -38,4 +38,4 @@ def _check_range(name, u_range):
 
 
 if __name__ == '__main__':
-    filerenamer('test', 3, (2, 5), '.txt', '.jpg', filepath='../test')
+    filerenamer(filename='test', count_length=3, u_range=(2, 5), old_ext='.txt', new_ext='.jpg', filepath='../test')

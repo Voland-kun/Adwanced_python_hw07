@@ -1,4 +1,4 @@
 from ren.renamer import filerenamer
 
 
-filerenamer("test", 3, (2, 4), ".txt", ".jpg", filepath="test")
+filerenamer(filename='test', count_length=3, u_range=(2, 4), old_ext='.txt', new_ext='.jpg', filepath="test")
