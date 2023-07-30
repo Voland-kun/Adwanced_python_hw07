@@ -38,4 +38,4 @@ def _check_range(name, u_range):
 
 
 if __name__ == '__main__':
-    filerenamer("test", 3, (2, 5), ".txt", ".jpg", filepath="test")
+    filerenamer("test", 3, (2, 5), ".txt", ".jpg", filepath="../test")
