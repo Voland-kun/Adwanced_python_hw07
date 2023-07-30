@@ -1,7 +1,7 @@
 from pathlib import Path
 
 
-__all__ = ['renamer']
+__all__ = ['filerenamer']
 
 
 def filerenamer(filename, count_length=1, u_range=None, old_ext=None, new_ext=None, *, filepath="."):
