@@ -28,12 +28,12 @@ def filerenamer(*, filename='', count_length=1, u_range=None, old_ext=None, new_
 def _check_range(name, u_range):
     if u_range is not None:
         if len(name) < u_range[1]:
-            if len(name) < u_range[0]:
+            if len(name) < u_range[0]-1:
                 return 'ERROR'
             else:
-                return f'{name[u_range[0]:len(name)]}'
+                return f'{name[u_range[0]-1:len(name)]}'
         else:
-            return f'{name[u_range[0]:u_range[1]]}'
+            return f'{name[u_range[0]-1:u_range[1]]}'
     return ''
 
 
